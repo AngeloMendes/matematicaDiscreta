@@ -1,0 +1,8 @@
+A={1,2,3}
+B={2,3,4}
+C={1,2,4}
+Aluno1=1
+Aluno2=2
+Aluno3=3
+Aluno4=4
+FIM
