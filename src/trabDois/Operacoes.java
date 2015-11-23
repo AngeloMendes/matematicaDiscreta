@@ -63,15 +63,15 @@ public class Operacoes {
 		return formata.agrupaConjunto(uniao);
 	}
 
-	public void intersecao(String[] conjunto1, String[] conjunto2) {
+	public void intersecao(String[] conjunto1, String[] conjunto2) {//, String[] conjunto3){
+		//para questão 2.2 que trabalha com 3 conjunto foi necessario alterar este método adicionando mais um parametro
+		// as alterações foram comentadas 
 		System.out.print('{');
 		for (int i = 0; i < conjunto1.length; i++) {
 			for (int j = 0; j < conjunto2.length; j++) {
 				//for (int k = 0; k < conjunto3.length; k++) {
 					if (conjunto1[i].compareTo(conjunto2[j]) == 0){// && conjunto1[i].compareTo(conjunto3[k])==0) {
 						System.out.print(conjunto1[i] + ',');
-						// System.out.print(',');
-						// intersecaoConj[j]=conjunto1[i];
 					//}
 				}
 			}
@@ -80,15 +80,7 @@ public class Operacoes {
 
 	}
 
-	public static boolean elementoIntersecao(String elemento, int posicao) {
-
-		return false;
-	}
-
 	public void produtoCartesiano(String[] conjunto1, String[] conjunto2) {
-		// 1x1, 2x2, 3x3
-		// 1x2, 2x3, 3x1
-		// 1x3, 2x1, 3x2
 		// {a,b,c} {d,e,f}
 		// <a,d> <b,e> <c,f> <a,e> <b,f> <c,d> <a,f> <b,d> <c,e>
 		ArrayList<String> produto = new ArrayList<>();

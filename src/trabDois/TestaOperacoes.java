@@ -19,7 +19,7 @@ public class TestaOperacoes {
 
 		
 		Scanner entrada = new Scanner(System.in);
-		FileReader arq = new FileReader("arquivo3.txt");
+		FileReader arq = new FileReader("arquivo.txt");
 		BufferedReader lerArq = new BufferedReader(arq);
 		String linha = lerArq.readLine();
 
